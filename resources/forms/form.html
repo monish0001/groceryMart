@@ -1,0 +1,20 @@
+{%extends 'dashboard/dash.html'%}
+
+{%block title%}{{ title }}{%endblock%}
+{%block stylesheets %}
+	{{ parent() }}
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="/css/form.css" />
+{%endblock%}
+
+{%block main%}
+	{{ form.displayForm() }}
+{%endblock%}
+
+{% block script %}
+	{{ parent() }}
+		<script src="/ckeditor/ckeditor.js"></script>
+		<script type="text/javascript">
+			{{ script | raw }}
+		</script>
+{%endblock%}

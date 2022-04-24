@@ -1,0 +1,58 @@
+a{
+  opacity: 1;
+}
+.tile{
+	  width: 90%;
+    padding: 25px;
+    margin: 5% auto;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;  
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a1a;
+    box-shadow: 1px 3px 5px #000000;
+}
+.icon{
+  width: 10%;
+  height: 10%;
+}
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.overlay button{
+     border:2px grey solid;
+     cursor: pointer;
+     padding: 2px 2px;
+     font-size: 15px;
+     font-family: 'Roboto', sans-serif;
+}
+.overlay button:hover{
+     background: #2f2f2f;
+}
+.tile:hover .icon{
+  opacity:0.2;
+}
+.tile:hover .text{
+  opacity:0.2;
+}
+.tile:hover .overlay{
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .icon{
+
+    width: 30%;
+    height: 30%;
+
+  }
+
+}

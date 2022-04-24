@@ -1,0 +1,21 @@
+{%extends 'dashboard/dash.html'%}
+{%block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="/css/event.css" />
+{%endblock%}
+{%block main%}
+{% for event in events %}
+	<div class='tile'>
+		<div class='text'>
+			<h2>{{ event.eventName|e }}</h2>
+			<br/>
+			{{ event.eventTagline|e }}
+		</div>
+		<img src="/{{ event.eventImage|e }}" class='icon'></img>
+		<div class='overlay'>
+			<a href='/adminPanel19/events/updateEvent?name={{event.eventName}}'><button>Update Event</button></a>
+			<a href='/adminPanel19/events/deleteEvent?name={{event.eventName}}'><button>Delete Event</button></i></a>
+		</div>
+	</div>
+{% endfor %}
+{%endblock%}

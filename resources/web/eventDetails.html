@@ -1,0 +1,75 @@
+{%extends 'web/home.html'%}
+   
+  {%block homeimage%} 
+                   
+       {%endblock%}
+     {%block about%} 
+     <style type="text/css">
+        #temp{
+        color: black;
+      }
+      @media only screen and (max-width: 768px){
+        #temp{
+        color: white;
+      }}
+     </style>
+     <div id="about">
+                <div  style="margin-top: 100px;" class="about-content">
+                    <div class="us-grid">
+                        <div class="container">
+                            <div  class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="about-image">
+                                        <img src="/{{image}}" alt="" class="about-img">
+                                    </div><!-- end about-image  -->
+                                </div><!-- end col-md-6  -->
+                                <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 ">
+                                    <div class="about-details">
+                                        <h3 align="center">{{title}}</h3>
+                                        <br>
+                                     <!--    <h5 align="center">{{tagline}}</h5> -->
+                                          <p> {{description|raw}}</p>
+                                        
+                                    </div><!-- end about-details  -->
+                                 
+                                     <a  class="btn-7 whitebutton" href="/register?id={{title}}"><span>Purchase</span></a>
+                                   
+                                </div><!-- end col-md-6  -->
+                                 <div class="row">
+                               
+                            </div><!-- end row  -->
+<br><br><br>
+                            
+                        </div><!-- end container  -->
+                    </div><!-- end me-grid  -->
+                    <br><br>
+                                           
+          {%endblock%} 
+    {%block divider%}
+         {%endblock%}   
+ {%block team%}
+      {%endblock%}
+   {%block events%}  
+
+                    {%endblock%}
+                     {%block gallery%} 
+
+                       {%endblock%}
+                         {%block alumni%}  
+                           {%endblock%}
+                          {%block sponsors%}   
+                            {%endblock%}
+                                {%block contact%} 
+                            {%endblock%}
+                         
+
+
+
+
+
+
+
+
+
+
+
+

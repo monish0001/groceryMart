@@ -1,0 +1,71 @@
+{%extends 'web/home.html'%}
+   
+  {%block homeimage%} 
+ <body  style="background: black;color: white;margin-top: 50px;" >
+    <div>
+      <marquee direction="down" behavior="alternate" height="150">
+
+<marquee behavior="alternate"> <h3 align="center" style="color: #d72645;font-size: 48px;">A lucky draw will be conducted in college auditorium,participants are requested to stay!!!</h3> </marquee>
+
+</marquee>
+   
+         <table align="center" style="margin-bottom: 100px;"  class="table table-dark">
+  <thead>
+    <tr>
+      
+      <th scope="col"><marquee scrolldelay="200"  behavior="alternate"height="50">Event Name</marquee></th>
+      <th scope="col"><marquee  behavior="alternate" height="50">Room Number</marquee></th>
+      <th scope="col"><marquee scrolldelay="200"  behavior="alternate" height="50">Status</marquee></th>
+       <th scope="col"><marquee scrolldelay="200"  behavior="alternate" height="50">Round</marquee></th>
+    </tr>
+  </thead>
+  <tbody>
+     {% for event in events %}
+    <tr>
+  
+      <td ><marquee  behavior="slide"  >{{ event.eventName|e }}</marquee></td>
+      <td><marquee>{{ event.room|e }}</marquee></td>
+      <td><marquee>{{ event.status|raw }}</marquee></td>
+      <td><marquee>{{ event.round|e }}</marquee></td>
+    </tr>
+     {% endfor %}
+  </tbody>
+</table>
+
+    </div>
+ </body>
+       {%endblock%}
+     {%block about%} 
+
+                                           
+          {%endblock%} 
+    {%block divider%}
+         {%endblock%}   
+ {%block team%}
+      {%endblock%}
+   {%block events%}  
+
+                    {%endblock%}
+                     {%block gallery%} 
+
+                       {%endblock%}
+                         {%block alumni%}  
+                           {%endblock%}
+                          {%block sponsors%}   
+                            {%endblock%}
+                                {%block contact%} 
+                                 
+                            {%endblock%}
+                         
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,271 @@
+body {
+    background-color: black;
+}
+#teaserVideo {
+    position: fixed;
+    right: 0;
+    top: 10%;
+    min-width: 100%; 
+    max-height: 80%;
+}
+#skipBtn{
+    margin-top: 40%;
+    margin-left: 45%;
+}
+#canvas-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#canvas-wrap canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+.a_nav,
+.a_nav:active {
+    color: #00bebe;
+    text-decoration: none;
+}
+#nav-logo {
+    width: 50%;
+    border-radius: 50%;
+}
+.nav-text{
+    padding: 45px !important;
+}
+#header {
+    text-align: center;
+    letter-spacing: 1.8px;
+    position: fixed;
+    background: #0f0f0f;
+    z-index: 999;
+    top: 0;
+    height: 23%;
+}
+.nav-down {
+    top: 0px;
+}
+.navigation-bar {
+    margin-top: 20px;
+}
+.navigation-bar .col{
+    padding: 0.6rem;
+}
+.nav-link {
+    font-size: 20px;
+}
+.a_nav.before:before,
+.a_nav.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    position: absolute;
+}
+.a_nav.before:before {
+    top: -0.25em;
+}
+.a_nav.after:after {
+    bottom: -0.25em;
+}
+.a_nav.before:before,
+.a_nav.after:after {
+    height: 10px;
+    background: white;
+}
+.square {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 19px;
+    overflow: hidden;
+    padding: 10px;
+}
+.square .a_nav {
+    padding: 0.2em 0.4em;
+}
+.square:before,
+.square:after {
+    content: "";
+    box-sizing: border-box;
+    transition: 0.5s all ease;
+    position: absolute;
+    width: 5px;
+    height: 0;
+    background: white;
+    /*left and right line colors*/
+}
+.square:before {
+    /*before content that is left line*/
+    left: 0;
+    bottom: -0.2em;
+}
+.square:after {
+    /*after content that is right line*/
+    right: 0;
+    top: -0.2em;
+}
+.square .a_nav:before {
+    left: 0;
+    transition: 0.50s all ease;
+}
+.square .a_nav:after {
+    right: 0;
+    transition: 0.50s all ease;
+}
+.square:hover:before,
+.square:hover:after {
+    height: calc(100% + 0.4em);
+}
+.square:hover .a_nav:before,
+.square:hover .a_nav:after {
+    width: 100%;
+    /*top and bottom line*/
+}
+.square:hover .nav-link {
+    /*link text color*/
+    color: white;
+}
+.top{
+    margin-top: 13% !important;
+}
+.banner{
+    margin-bottom: 7%;
+    padding: 50px;
+    background:rgba(128,128,128,0.15);
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.50);
+}
+.banner-text{
+    font-size: 30px;
+    color: white;
+}
+#tagline{
+    font-weight: normal;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#eventsBtn a{
+    font-family: 'Roboto', sans-serif;
+}
+#aboutUs{
+    background:rgba(128,128,128,0.15);
+}
+.aboutus_heading {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #00bebe;
+    display: block;
+    display: box;
+    box-align: center;
+    text-align: center;
+    position: relative;
+}
+.desc {
+    color: white;
+    font-size: 18px;
+}
+.desc h3, .desc2 h3 {
+    color: #00bebe;
+    text-align: center;
+}
+.desc p {
+    margin-left: 100px;
+    text-align: center;
+}
+.desc2 p {
+  color: white;
+  font-size: 18px;
+}
+#ourTeam{
+    padding-bottom: 5%;
+    margin-top: 10%;
+    background:rgba(128,128,128,0.15);
+}
+#teamText{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: lightgrey;
+    text-align: center;
+    padding: 25px;
+}
+.footer {
+    padding:20px;
+    background:rgba(128,128,128,0.20);
+    color: #00bebe;
+    margin: 0px;
+}
+.foot-link {
+    color: white;
+}
+.foot-link:hover {
+    color: #00bebe;
+}
+.footer-center {
+    font-size: 20px;
+}
+.footer-logo {
+    /*for footer logo changes, here*/
+    margin: 3%;
+    width: 15%;
+    border-radius: 50%;
+}
+.copyrights{
+    font-family: 'Roboto', sans-serif ;
+    padding:25px;
+    background:rgba(128,128,128,0.10); 
+    color: lightgrey;
+}
+#toast-container 
+{
+    top: auto !important;
+    right: auto !important;
+    bottom: 50%;
+    left: 44%;
+}
+.chip{
+    background-color: #424242;
+}
+.chip a{
+    font-family: 'Roboto';
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+
+    #skipBtn{
+        margin-top: 90%;
+        margin-left: 35%;
+    }
+    .collapsible{
+        border: solid thin black;
+        box-shadow: 1px 3px 5px #000000;
+    }
+    .collapsible-header{
+        background: #2c2c2c;
+        border: solid thin black;
+        color: white;
+    }
+    .collapsible-body{
+        color: #00bebe;
+    }
+    #teamText{
+        font-size: 18px;
+    }
+    .ourTeam img{
+        height: 100%;
+    }
+    .ourTeam{
+        height: 150px;
+    }
+    .pallete{
+        max-width: 100%;
+    }
+    .text{
+        font-size: 10px;
+    }
+    #teamText{
+        display: none;
+    }
+
+}

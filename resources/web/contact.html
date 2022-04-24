@@ -1,0 +1,136 @@
+{%extends 'web/home.html'%}
+   
+  {%block homeimage%} 
+                  
+       {%endblock%}
+     {%block about%} 
+     
+          {%endblock%} 
+    {%block divider%}
+         {%endblock%}   
+ {%block team%}
+      {%endblock%}
+   {%block events%}  
+
+                    {%endblock%}
+                     {%block gallery%} 
+
+                       {%endblock%}
+                         {%block alumni%}  
+                           {%endblock%}
+                          {%block sponsors%}   
+                            {%endblock%}
+                                {%block contact%} 
+                                  <div  id="contact">
+                <div   id="contact-content">
+                    <div style="margin-top: 200px;" class="contact-grid">
+                        <div class="contact-form-details">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="main-title white-title text-left ">
+                                            <h3>Contact US</h3>
+                                            <div class="underline1 no-margin"></div>
+                                            <p>Feel free to message here related any query.</p>
+                                        </div><!-- end contact-title -->
+                                    </div><!-- end col-md-12 -->
+                                </div>
+                                <div class="row tips-row">
+
+                                    <div class="col-lg-8 col-md-8 col-sm-6 contact-col">
+                                        <div class="contact-form1 wow fadeIn ">
+                                                {{contactUsForm.getStart()}}
+                                            <div id="contactForm" class="contact-form shake" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <div class="controls">
+                                                       {{contactUsForm.getElementByName('name')}}
+                                                        <div class="help-block with-errors"></div>
+                                                    </div><!-- end controls -->
+                                                </div><!-- end form-group -->
+                                                <div class="form-group">
+                                                    <div class="controls">
+                                                         {{contactUsForm.getElementByName('email')}}
+                                                        <div class="help-block with-errors"></div>
+                                                    </div><!-- end controls -->
+                                                </div><!-- end form-group -->
+                                               
+                                                <div class="form-group">
+                                                    <div class="controls">
+                                                        {{contactUsForm.getElementByName('query')}}
+                                                        <div class="help-block with-errors"></div>
+                                                    </div><!-- end controls -->
+                                                </div><!-- end form-group -->
+                                              
+                                                <input  type="submit"  name="submitQuery" class="btn btn-success" value="Send Message">
+                                                
+                                                <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                                <div class="clearfix"></div>   
+                                            </div> 
+                                             {{contactUsForm.getEnd()}}
+                                        </div><!-- end contact-form -->
+                                    </div><!-- end col-md-8 -->
+                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                        <div class="contact-info">
+                                       
+                                        </div>
+                                        <br>  
+                                        <div class="contact-col-grid" data-wow-delay=".2s">
+                                            <i class="fa fa-map-marker contact-icon" aria-hidden="true"></i>
+                                            <h3>Address</h3>
+                                            <p>Swami Vivekanand Boys Hostel (MNNIT), Allahabad (U.P.)</p>
+                                        </div><!-- end contact-col  -->
+                                        <div class="contact-col-grid" data-wow-delay=".4s">
+                                            <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+                                            <h3>Email</h3>
+                                            <p>mart.grocery@gmail.com</p>
+                                        </div><!-- end contact-col  -->
+                                        <div class="contact-col-grid under-no-margin" data-wow-delay=".6s">
+                                            <i class="fa fa-mobile contact-icon" aria-hidden="true"></i>
+                                            <h3>Phone</h3>
+                                            <p>+91-9821446257</p>
+                                        </div><!-- end contact-col  -->
+                                    </div>
+                                </div><!-- end row -->
+
+                            </div><!-- end container -->
+                         <!--    <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 no-padding">
+                                        <div class="google-maps">
+                                            <div class="map-wrap">
+                                                <div class="overlay-map" onClick="style.pointerEvents = 'none'"></div>
+                                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.821556806634!2d77.03580691455893!3d28.605129592072675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d053340000001%3A0x43728703a210ae01!2sDeen+Dayal+Upadhyaya+College!5e0!3m2!1sen!2sin!4v1538657692779" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div><!-- end contact-form-details -->
+
+      <script type="text/javascript">
+     
+      
+            function validateForm(form){
+          if(document.getElementById('name').valid && document.getElementById('email').valid && document.getElementById('email').valid ){
+              return true;
+          }else{
+            alert("Invalid Submission");
+              return false;
+          }
+          
+      }
+    </script>
+                            {%endblock%}
+                         
+
+
+
+
+
+
+
+
+
+
+
+
